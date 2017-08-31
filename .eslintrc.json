@@ -1,0 +1,22 @@
+{
+    "root": true, //refers to this project location only
+    "extends": [
+      "eslint:recommended",
+      "plugin:import/errors", //prevent invalid ES6 imports
+      "plugin:import/warnings"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module" //standard modules
+    },
+    //Prepare for common variables
+    "env": {
+      "browser": true,
+      "node": true,
+      "mocha": true
+    },
+    //overrides
+    "rules": {
+        "no-console": 1
+    }
+  }
